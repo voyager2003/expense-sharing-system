@@ -1,0 +1,178 @@
+.debts-dashboard {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.debts-dashboard h2 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.empty-message,
+.settled-message {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.settled-message {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.summary-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.summary-card h3 {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.total-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.debts-table-container {
+  overflow-x: auto;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.debts-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.debts-table thead {
+  background: #f8f9fa;
+  border-bottom: 2px solid #ddd;
+}
+
+.debts-table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.debt-row {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s ease;
+}
+
+.debt-row:hover {
+  background-color: #f8f9fa;
+}
+
+.debt-row:last-child {
+  border-bottom: none;
+}
+
+.debts-table td {
+  padding: 15px;
+}
+
+.debtor-cell,
+.creditor-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.owe-badge {
+  background: #fee;
+  color: #c92a2a;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  min-width: 45px;
+  text-align: center;
+}
+
+.receives-badge {
+  background: #efe;
+  color: #2d7a2d;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  min-width: 80px;
+  text-align: center;
+}
+
+.person-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.amount-cell {
+  text-align: right;
+}
+
+.amount-badge {
+  background: #f0f0f0;
+  color: #333;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+.summary-info {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  color: #666;
+}
+
+.summary-info p {
+  margin: 8px 0;
+}
+
+.summary-info strong {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .debts-dashboard {
+    padding: 20px;
+  }
+
+  .debts-table th,
+  .debts-table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .total-amount {
+    font-size: 2rem;
+  }
+
+  .debtor-cell,
+  .creditor-cell {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
